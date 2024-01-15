@@ -1,4 +1,6 @@
-{
+import 'dotenv/config';
+
+export default {
   "expo": {
     "name": "NasaImages",
     "slug": "NasaImages",
@@ -25,6 +27,9 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    extra: {
+      apiKey: process.env.API_KEY,
     }
   }
 }
